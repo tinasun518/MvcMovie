@@ -233,6 +233,23 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706301848389_InitialCreate.cs" />
+    <Compile Include="Migrations\201706301848389_InitialCreate.Designer.cs">
+      <DependentUpon>201706301848389_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707031838196_Initial.cs" />
+    <Compile Include="Migrations\201707031838196_Initial.Designer.cs">
+      <DependentUpon>201707031838196_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707031852399_Rating.cs" />
+    <Compile Include="Migrations\201707031852399_Rating.Designer.cs">
+      <DependentUpon>201707031852399_Rating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707031928419_DataAnnotations.cs" />
+    <Compile Include="Migrations\201707031928419_DataAnnotations.Designer.cs">
+      <DependentUpon>201707031928419_DataAnnotations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -243,7 +260,16 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\ie8.css" />
+    <Content Include="Content\ie9.css" />
+    <Content Include="Content\images\avatar.jpg" />
+    <Content Include="Content\images\bg.jpg" />
+    <Content Include="Content\images\Koala.jpg" />
+    <Content Include="Content\main.css" />
+    <Content Include="Content\noscript.css" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -257,6 +283,11 @@
     <Content Include="Metadata\deploymentTemplates\apiappconfig.azureresource.json" />
     <Content Include="apiapp.json" />
     <Content Include="ClassDiagram1.cd" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -325,6 +356,20 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201706301848389_InitialCreate.resx">
+      <DependentUpon>201706301848389_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707031838196_Initial.resx">
+      <DependentUpon>201707031838196_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707031852399_Rating.resx">
+      <DependentUpon>201707031852399_Rating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707031928419_DataAnnotations.resx">
+      <DependentUpon>201707031928419_DataAnnotations.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
